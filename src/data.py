@@ -17,6 +17,6 @@ def download(ticker: str, start: str, out_dir: Path) -> Path:
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--ticker", default="QQQ")
-    p.add_argument("--start", default="2010-01-01")
+    p.add_argument("--start", default="1999-03-10")
     args = p.parse_args()
     print(download(args.ticker, args.start, Path("data")))
